@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Resume Screener</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="masthead">
+    <h1><span class="eyebrow">Resume Screener</span>Candidate matching console</h1>
+    <div class="status" id="status-line">connecting…</div>
+  </header>
+
+  <div class="grid">
+    <!-- LEFT: intake -->
+    <div>
+      <div class="panel">
+        <h2>01 · Job description</h2>
+        <label for="job-title">Title</label>
+        <input type="text" id="job-title" placeholder="e.g. Backend Engineer">
+        <label for="job-desc">Description</label>
+        <textarea id="job-desc" placeholder="Paste the job description here…"></textarea>
+        <button id="create-job-btn">Save job</button>
+        <div class="log" id="job-log"></div>
+
+        <label for="job-select">Active job</label>
+        <select id="job-select"><option value="">— none saved —</option></select>
+      </div>
+
+      <div class="panel">
+        <h2>02 · Upload resume</h2>
+        <label for="resume-file">PDF or .txt</label>
+        <input type="file" id="resume-file" accept=".pdf,.txt">
+        <button id="upload-btn">Parse resume</button>
+        <div class="log" id="upload-log"></div>
+      </div>
+
+      <div class="panel">
+        <h2>03 · Candidates on file</h2>
+        <div id="candidate-list"><div class="empty-state">none uploaded yet</div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: shortlist -->
+    <div>
+      <div class="panel">
+        <h2>Shortlist</h2>
+        <button id="run-match-btn">Score all candidates against active job</button>
+        <div class="log" id="match-log"></div>
+      </div>
+
+      <div id="shortlist-output">
+        <div class="empty-state">Save a job, upload resumes, then run scoring.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

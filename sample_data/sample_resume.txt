@@ -1,0 +1,23 @@
+Jordan Ellis
+jordan.ellis@example.com | (555) 123-4567
+
+SUMMARY
+Backend-focused software engineer with 4 years of experience building and scaling
+REST APIs and data-driven services.
+
+EXPERIENCE
+Backend Engineer, Northwind Systems — Mar 2022 - Present
+Built and maintained REST APIs in Python using FastAPI, serving ~2M requests/day.
+Designed PostgreSQL schemas for a multi-tenant SaaS product. Introduced Docker-based
+local dev environment adopted across the 8-person team.
+
+Software Engineer, Cascade Labs — Jul 2020 - Feb 2022
+Developed Django backend services for an internal analytics tool. Wrote integration
+tests and set up CI pipelines using GitHub Actions.
+
+EDUCATION
+B.S. Computer Science, University of Washington — 2020
+
+SKILLS
+Python, FastAPI, Django, PostgreSQL, Docker, REST API design, Git, GitHub Actions,
+SQL, Linux
